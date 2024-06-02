@@ -565,7 +565,7 @@ void np_priority(process *p[])
 		copy_queue[i] = p[i];
 	}
 		
-	printf("Non-Preemptive Priority Scheduling\n\n");
+	printf("Non-preemptive Priority Scheduling\n\n");
 	
 	// priority number가 작은 순서대로 정렬 
 	priority_sort(p);
@@ -750,7 +750,7 @@ void np_sjf(process *p[])
 		copy_queue[i] = p[i];
 	}
 		
-	printf("Non-preemptive SJF scheduling\n\n");
+	printf("Non-preemptive SJF Scheduling\n\n");
 	
 	// cpu busrt time이 작은 순서대로 정렬 
 	cpu_time_sort(p);
