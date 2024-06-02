@@ -106,7 +106,7 @@ void arr_time_sort(process *p[])
 	process *temp;
 	for (i = 1; i < NUMBER; i++)
 	{
-		for (j = 0; j < NUMBER - 1; j++)
+		for (j = 0; j < NUMBER - i; j++)
 		{
 			if (p[j]->arr_time > p[j + 1]->arr_time)
 			{
@@ -135,7 +135,7 @@ void priority_sort(process *p[])
 	process *temp;
 	for (i = 1; i < NUMBER; i++)
 	{
-		for (j = 0; j < NUMBER - 1; j++)
+		for (j = 0; j < NUMBER - i; j++)
 		{
 			if (p[j]->priority > p[j + 1]->priority)
 			{
@@ -164,7 +164,7 @@ void cpu_time_sort(process *p[])
 	process *temp;
 	for (i = 1; i < NUMBER; i++)
 	{
-		for (j = 0; j < NUMBER - 1; j++)
+		for (j = 0; j < NUMBER - i; j++)
 		{
 			if (p[j]->cpu_time > p[j + 1]->cpu_time)
 			{
@@ -193,7 +193,7 @@ void pid_sort(process *p[])
 	process *temp;
 	for (i = 1; i < NUMBER; i++)
 	{
-		for (j = 0; j < NUMBER - 1; j++)
+		for (j = 0; j < NUMBER - i; j++)
 		{
 			if (p[j]->pid > p[j + 1]->pid)
 			{
